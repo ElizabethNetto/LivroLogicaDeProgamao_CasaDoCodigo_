@@ -1,15 +1,21 @@
 <script>
-    var numeroPensado = Math.round(Math.random() * 100);
+    var numeroPensado = Math.round(Math.random() * 10);
 
     var numeroDeTentativas = 1;
-    while(numeroDeTentativas <= 3) {
+    while(numeroDeTentativas <= 5) {
         var chute = prompt("Qual voce acha que é?");
     
         if(chute == numeroPensado) {
             alert("Parabéns! Você acertou!");
             break; // break significa se acertar parar imediatamente
         } else {
-            alert("Errou! Será que ainda tem mais tentativas?");
+            if(chute > numeroPensado) {
+            alert("Errou! O numero que pensei é menor que esse!");
+            }
+            if(chute < numeroPensado){
+                alert("errou! O numero que pensei e maior que esse!")
+            } 
+
         }
         numeroDeTentativas++;
     }
