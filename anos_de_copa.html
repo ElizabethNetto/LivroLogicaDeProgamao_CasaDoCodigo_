@@ -1,0 +1,15 @@
+<script>
+    function mostra(frase) {
+        document.write(frase + "<br>");
+    }
+    var anosComTexto = prompt("Informe o ano inicial");
+    var anosDeOlimpiadas = parseInt(anosComTexto);
+    var anoLimite = prompt("Qual é o ano limite?");
+
+    while(anosDeOlimpiadas <= anoLimite) {
+        mostra(anosDeOlimpiadas + " tem Olimpiadas!");
+        anosDeOlimpiadas = 4 + anosDeOlimpiadas;
+    }
+
+    mostra("Ufa! Esses foram os anos de Olimpiadas até " + anoLimite);
+</script>
