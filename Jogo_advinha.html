@@ -1,5 +1,5 @@
 <script>
-    var numeroPensado = Math.round(Math.random() * 10);
+    var numeroPensado = Math.round(Math.random() * 100);
 
     var numeroDeTentativas = 1;
     while(numeroDeTentativas <= 3) {
@@ -7,6 +7,7 @@
     
         if(chute == numeroPensado) {
             alert("Parabéns! Você acertou!");
+            break; // break significa se acertar parar imediatamente
         } else {
             alert("Errou! Será que ainda tem mais tentativas?");
         }
